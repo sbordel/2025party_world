@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'RockoFLF';
+    src: url('RockoFLF.woff2') format('woff2'),
+        url('RockoFLF.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RockoFLF';
+    src: url('RockoFLF.woff2') format('woff2'),
+        url('RockoFLF.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RockoUltraFLF';
+    src: url('RockoUltraFLF.woff2') format('woff2'),
+        url('RockoUltraFLF.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RockoUltraFLF';
+    src: url('RockoUltraFLF-Bold.woff2') format('woff2'),
+        url('RockoUltraFLF-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
