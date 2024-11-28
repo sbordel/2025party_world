@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Ring Matrix';
+    src: url('RingMatrix.woff2') format('woff2'),
+        url('RingMatrix.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ring Matrix 3D';
+    src: url('RingMatrix3D.woff2') format('woff2'),
+        url('RingMatrix3D.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ring Matrix Two';
+    src: url('RingMatrixTwo.woff2') format('woff2'),
+        url('RingMatrixTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

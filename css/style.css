@@ -63,6 +63,17 @@
 }
 
 @font-face {
+    font-family: 'Ring Matrix';
+    src: url('../assets/fonts/ring-matrix/RingMatrixTwo.woff') format('woff'),
+    url('../assets/fonts/ring-matrix/RingMatrixTwo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
     font-family: 'Neue Haas Display Roman';
     src: url('../assets/fonts/neuehaas/NeueHaasDisplay-Roman.woff') format('woff'),
         url('../assets/fonts/neuehaas/NeueHaasDisplay-Roman.woff2') format('woff2');
@@ -197,6 +208,11 @@ body {
     transform: rotate(5deg);
 }
 
+a {
+    text-decoration: none;
+    color: #27282D ;
+}
+
 a:hover {
     filter: drop-shadow(-10px -10px 30px #E9F0F2);
     -webkit-filter: drop-shadow(-10px -10px 30px #E9F0F2);
@@ -299,7 +315,7 @@ p {
     font-family: 'Better VCR';
     padding-left: 50px;
     padding-right: 5%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 span {
@@ -319,6 +335,20 @@ hr {
     height: 1px;
     width: 100%;
   }
+
+.tb-right a:hover {
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    background-color: #27282D ;
+    color: #8A9B8C;
+}
+
+.tb-right a:active {
+    background-color: #27282D ;
+    color: #27282D;
+}
+
 /* containers */
 
 ::-webkit-scrollbar {
@@ -356,7 +386,7 @@ tr {
 td {
     padding-top: 3%;
     padding-bottom: 3%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     vertical-align:bottom;
 }
 
@@ -486,6 +516,27 @@ td {
     padding: 0 15px 15px 15px;
 }
 
-#world-info {
-    width: auto;
+.world-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
 }
+
+#elem7 {
+    grid-row-start: 1;
+    text-align: left;
+    float: left;
+}
+
+#elem8 {
+    grid-row-start: 1;
+    text-align: center;
+    float: right;
+    border: 1px solid #27282D;
+}
+
+#elem9 {
+    grid-column: span 2 / span 2;  
+}
+

@@ -1,13 +1,4 @@
 @font-face {
-    font-family: 'Audio Nugget';
-    src: url('AudioNugget.woff2') format('woff2'),
-        url('AudioNugget.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Better VCR';
     src: url('BetterVCR.woff2') format('woff2'),
         url('BetterVCR.woff') format('woff');
