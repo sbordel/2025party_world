@@ -215,6 +215,8 @@ body {
 a {
     text-decoration: none;
     color: #27282D;
+    padding:0;
+    margin: 0;
 }
 
 a:hover {
@@ -309,8 +311,8 @@ h3 {
 #ellipse {
     font-family: 'Avenir';
     font-weight: bolder;
-    font-size: 1.5rem; 
-    text-align: center; 
+    font-size: 1.5rem;
+    text-align: center;
 
     border-radius: 50%;
     background: #8A9B8C;
@@ -325,7 +327,7 @@ h3 {
     margin-right: auto;
 }
 
-#ellipse:hover{
+#ellipse:hover {
     background: #27282D;
     color: #8A9B8C;
 
@@ -334,23 +336,28 @@ h3 {
     -moz-filter: none;
 }
 
-#ellipse:active{
+#ellipse:active {
     background: #27282D;
     color: #27282D;
 }
 
 p {
     font-family: 'Better VCR';
-    padding-left: 50px;
+    padding-left: 5%;
     padding-right: 5%;
     font-size: 1.2rem;
 }
 
 section a {
     font-family: 'Better VCR';
-    padding-left: 50px;
-    padding-right: 5%;
     font-size: 1.2rem;
+}
+
+#link{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 span {
@@ -370,7 +377,6 @@ hr {
     height: 1px;
     width: 100%;
 }
-
 
 #link:hover,
 .tb-right a:hover {
@@ -433,7 +439,16 @@ a.label:active {
     border: 1px solid #27282D;
 }
 
-.footer p {
+.footer {
+    display: block;
+}
+
+.footer-mb {
+    display: none;
+}
+
+.footer p,
+.footer-mb p {
     font-family: 'Neue Haas Display Roman';
     font-size: 1rem;
     bottom: 0;
@@ -449,7 +464,8 @@ a.label:active {
     float: right;
 }
 
-.footer a {
+.footer a,
+.footer-mb a {
     color: #3E7BD7;
 }
 
@@ -510,16 +526,26 @@ td {
 
 .tb-left {
     text-align: left;
-    padding-right: 10vw;
+    width: 10vw;
 }
 
-.tb-right {
+.tb-right{
     text-align: right;
+    width: 30vw;
+
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+.tb-right a{
+    text-align: right;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .lcd-scroll {
     overflow-y: scroll;
-
 }
 
 .return {
@@ -622,7 +648,7 @@ td {
 }
 
 #sound-logo:hover {
-    filter:invert(100);
+    filter: invert(100);
     -webkit-filter: 0;
     -moz-filter: 0;
 }
@@ -697,4 +723,238 @@ td {
 
 #sym1 {
     width: 50px;
+}
+
+/* --------- MOBILE --------- */
+/* -- small desktop window or large mobile device --*/
+@media screen and (max-width: 1100px),
+screen and (max-width: 1100px) and (max-height: 700px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .nav-grid {
+        display: flex;
+        align-self: center;
+        align-items: center;
+
+        display: grid;
+        height: 100%;
+        width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+
+        text-align: center;
+        padding: 2%;
+    }
+
+    a.elem1{
+        padding:0;
+        margin:0;
+    }
+
+    .elem1 {
+        display: flex;
+        top:0;
+        grid-column: span 2 / span 2;
+    }
+
+    .elem2,
+    .elem3 {
+        grid-row-start: 2;
+    }
+    
+    .elem4,
+    .elem5 {
+        grid-row-start: 3;
+    }
+
+    .elem6 {
+        height: 50px;
+        grid-column: span 2 / span 2;
+        grid-row-start: 4;
+        margin: 5vh;
+    }
+
+    #credits {
+        width: 85%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    #tickets,
+    #bear,
+    #castle,
+    #bonsai {
+        width: 95%;
+        overflow:visible;
+    }
+
+    #tickets{ 
+        margin-top: -25px;
+    }
+
+    #bear{ 
+        margin-top: 125px;
+    }
+
+    #castle {
+        margin-top:-125px;
+    }
+
+    #bonsai {
+        margin-top: 50px;
+    }
+
+    .tiles {
+        margin-bottom: 15px;
+        width: 15%;
+    }
+
+    .tiles:hover {
+        filter: drop-shadow(-10px -10px 30px #E9F0F2);
+        -webkit-filter: drop-shadow(-10px -10px 30px #E9F0F2);
+        -moz-filter: drop-shadow(-10px -10px 30px #E9F0F2);
+    }
+    
+    .info{
+        height: 80vh;
+        padding: 15px;
+        margin: 5%;
+    }
+
+    .title {
+        display: block;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+    }
+
+    .title h1{
+        margin: 0;
+    }
+
+    .tb-left {
+        text-align: left;
+        width: 10vw;
+    }
+    
+    .tb-right{
+        text-align: right;
+        width: 30vw;
+    
+        display: flex;
+        justify-content: right;
+        text-align: right;
+    }  
+    
+}
+
+/* -- narrow desktop window or small mobile device --*/
+@media screen and (max-width: 800px) {
+    body.index{
+        /* overflow: hidden; */
+    }
+
+    #tickets,
+    #bear,
+    #castle,
+    #bonsai {
+        width: 90%;
+    }
+
+    .elem2,
+    .elem3 {
+        margin-top: -3vh;
+        grid-row-start: 2;
+    }
+
+    #bear-info {
+        margin: 10px;
+        height: 70vh;
+        width: 80vw;
+        border: 20px outset #48B800;
+    }
+    
+    #castle-info {
+        margin: 10px;
+        height: 70vh;
+        width: 80vw;
+        border: 10px inset #3E7BD7;
+    }
+    
+    #bonsai-info {
+        max-width: unset;
+        margin: 10px;
+        height: 70vh;
+        width: 80vw;
+        border: 10px inset #E9F0F2;
+    }
+
+    #world-page .info {
+        display: flex;
+        height: 70vh;
+        width: 80vw;
+        justify-content: center;
+        float: center;
+        text-align: center;
+    }
+
+    #world-info{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* row-gap: 2vh; */
+    }
+
+    #elem7 {
+        align-items: center;
+        text-align: center;
+        float: center;
+        grid-column: span 2 / span 2;
+    }
+    
+    #elem8 {
+        text-align: center;
+        grid-row-start: 2;
+        grid-column: span 2 / span 2;
+
+    }
+    
+    #elem9 {
+        text-align: center;
+        grid-row-start: 3;
+        grid-column: span 2 / span 2;
+    }
+    
+    #elem10 {
+        float: center;
+        text-align: center;
+        grid-row-start: 4;
+        grid-column: span 2 / span 2;
+    }
+
+    .header-box p {
+        display: block;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer-mb {
+        display: inline;
+    }
+    
 }
