@@ -364,6 +364,26 @@ section a {
     margin-right: 0;
 }
 
+#link-v2{
+    font-family: 'Superstar';
+    font-size: 2.4rem;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#link-v2{
+    font-family: 'Superstar';
+    font-size: 2.4rem;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 span {
     font-family: 'Rocko';
 }
@@ -383,6 +403,7 @@ hr {
 }
 
 #link:hover,
+#link-v2:hover,
 .tb-right a:hover {
     filter: none;
     -webkit-filter: none;
