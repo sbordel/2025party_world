@@ -558,7 +558,6 @@ td {
     text-align: right;
     width: 30vw;
 
-    display: flex;
     justify-content: right;
     text-align: right;
 }
@@ -873,8 +872,8 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     .tb-right{
         text-align: right;
         width: 30vw;
-    
-        display: flex;
+/*     
+        display: flex; */
         justify-content: right;
         text-align: right;
     }  
@@ -885,6 +884,18 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 @media screen and (max-width: 800px) {
     body.index{
         /* overflow: hidden; */
+    }
+
+    #bear-page,
+    #bonsai-page,
+    #world-page {
+        background-position: center;
+        background-size: 150vh;
+    }
+
+    #castle-page {
+        background-position: bottom;
+        background-size: 150vh;
     }
 
     #tickets,
@@ -920,6 +931,27 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         height: 70vh;
         width: 80vw;
         border: 10px inset #E9F0F2;
+    }
+
+    .tb-left {
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-size: 1.1rem;
+        letter-spacing: -0.02rem;
+    }
+
+    .tb-right{
+        text-align: right;
+        width: 40vw;
+/*     
+        display: flex; */
+        justify-content: right;
+        text-align: right;
+    }  
+
+   .tb-right a {
+        font-size: 1.1rem;
+        letter-spacing: -0.02rem;
     }
 
     #world-page .info {
