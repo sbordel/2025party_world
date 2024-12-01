@@ -92,7 +92,6 @@ html {
 
 body {
     min-height: 100vh;
-
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
@@ -102,9 +101,6 @@ body {
 
     margin: 0;
     padding: 0;
-    background-image: url("../assets/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #27282D;
     box-sizing: border-box;
     font-family: 'Better VCR';
@@ -114,9 +110,12 @@ body {
     scrollbar-width: none;
 }
 
-.page {
-    background: #8A9B8C;
-    overflow-y: hidden;
+.index {
+    background-color: #ABCCFA;
+    background-image: url("../assets/backgrounds/cloud-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #bear-page {
@@ -125,6 +124,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
 }
 
 #castle-page {
@@ -133,6 +133,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
 }
 
 #bonsai-page {
@@ -141,6 +142,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
 }
 
 #world-page {
@@ -149,6 +151,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
 }
 
 .nav-grid {
