@@ -588,8 +588,8 @@ td {
     margin: 15px;
 
     font-family: 'Rocko';
-    border: 10px outset;
-    border-radius: 20px;
+    border: 5px outset;
+    border-radius: 50%;
 
     text-decoration: none;
 }
@@ -602,12 +602,12 @@ td {
 
 .return:active {
     color: #27282D;
-    border: 10px inset;
-    border-radius: 20px;
+    border: 5px inset;
+    border-radius: 50%;
 }
 
 #bear-page .return {
-    background-color: #ffdd0000;
+    background-color: #ffdd00;
     border-color: #f0d001;
 }
 
@@ -618,7 +618,7 @@ td {
 
 
 #castle-page .return {
-    background-color: #e9f0f200;
+    background-color: #e9f0f2;
     border-color: #d6ddde;
 }
 
@@ -628,7 +628,7 @@ td {
 }
 
 #bonsai-page .return {
-    background-color: #3e7bd700;
+    background-color: #3e7bd7;
     border-color: #3877d6;
 }
 
@@ -638,7 +638,7 @@ td {
 }
 
 #world-page .return {
-    background-color: #47b80000;
+    background-color: #47b800;
     border-color: #42aa02;
 }
 
