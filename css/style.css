@@ -112,7 +112,7 @@ body {
 
 .index {
     background-color: #ABCCFA;
-    background-image: url("../assets/backgrounds/cloud-bg.jpg");
+    background-image: url("../assets/backgrounds/cloud-bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -228,6 +228,10 @@ a:hover {
     -moz-filter: drop-shadow(-10px -10px 30px #E9F0F2);
 }
 
+#credits:hover {
+    transform: rotate(5deg);
+}
+
 #tickets:hover {
     transform: rotate(5deg);
 }
@@ -247,6 +251,12 @@ a:hover {
 .tiles {
     margin-bottom: -80px;
     width: 12%;
+}
+
+.tiles:hover {
+    filter: drop-shadow(-10px -10px 30px #E9F0F2);
+    -webkit-filter: drop-shadow(-10px -10px 30px #E9F0F2);
+    -moz-filter: drop-shadow(-10px -10px 30px #E9F0F2);
 }
 
 .tile-grid {
@@ -295,6 +305,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: baseline;
+}
+
+.title-mb {
+    display: none;
 }
 
 h2 {
@@ -377,21 +391,12 @@ section a {
     margin-right: 0;
 }
 
-#link-v2{
-    font-family: 'Superstar';
-    font-size: 2.4rem;
-    padding-bottom: 0;
-    margin-bottom: 5px;
-    margin-top: 1em;
-    margin-left: 0;
-    margin-right: 0;
-}
-
 span {
     font-family: 'Rocko';
 }
 
-.title span {
+.title span,
+.title-mb span {
     font-family: 'Rocko';
     font-size: 1.5rem;
 }
@@ -602,7 +607,7 @@ td {
 }
 
 #bear-page .return {
-    background-color: #FFDB00;
+    background-color: #ffdd0000;
     border-color: #f0d001;
 }
 
@@ -613,7 +618,7 @@ td {
 
 
 #castle-page .return {
-    background-color: #E9F0F2;
+    background-color: #e9f0f200;
     border-color: #d6ddde;
 }
 
@@ -623,7 +628,7 @@ td {
 }
 
 #bonsai-page .return {
-    background-color: #3E7BD7;
+    background-color: #3e7bd700;
     border-color: #3877d6;
 }
 
@@ -633,7 +638,7 @@ td {
 }
 
 #world-page .return {
-    background-color: #48B800;
+    background-color: #47b80000;
     border-color: #42aa02;
 }
 
@@ -845,26 +850,24 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         width: 15%;
     }
 
-    .tiles:hover {
-        filter: drop-shadow(-10px -10px 30px #E9F0F2);
-        -webkit-filter: drop-shadow(-10px -10px 30px #E9F0F2);
-        -moz-filter: drop-shadow(-10px -10px 30px #E9F0F2);
-    }
-    
     .info{
         height: 80vh;
         padding: 15px;
         margin: 5%;
     }
 
-    .title {
+    .title-mb {
         display: block;
         margin-top: 0.67em;
         margin-bottom: 0.67em;
     }
 
-    .title h1{
+    .title-mb h1{
         margin: 0;
+    }
+
+    .title {
+        display: none;
     }
 
     .tb-left {
