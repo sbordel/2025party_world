@@ -40,14 +40,6 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('../assets/fonts/avenir/AvenirLTStd-Roman.woff') format('woff'),
-        url('../assets/fonts/avenir/AvenirLTStd-Roman.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Avenir';
     src: url('../assets/fonts/avenir/AvenirLTStd-Black.woff') format('woff'),
         url('../assets/fonts/avenir/AvenirLTStd-Black.woff2') format('woff2');
     font-weight: bolder;
@@ -520,10 +512,8 @@ a.label:active {
 div.info {
     display: flex;
     flex-direction: column;
-
     align-content: center;
-
-    min-height: 50vh;
+    /* min-height: 50vh; */
     padding: 15px;
     width: auto;
     text-align: center;
@@ -546,7 +536,7 @@ div.info {
     padding-bottom: 2vh;
 }
 
- .table-mb {
+.table-mb {
     display: none;
 }
 
@@ -597,11 +587,23 @@ b {
     overflow-y: scroll;
 }
 
-.return {
+.menu {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 5px 10px 5px 10px;
+    display: block;
+}
+
+.menu-mb {
+    display: none;
+}
+
+#return {
+    display: block;
+}
+
+.menu-btn{
+    padding: 10px 15px 10px 15px;
     margin: 10px 15px 10px 15px;;
 
     font-family: 'Better VCR';
@@ -613,56 +615,65 @@ b {
     text-decoration: none;
 }
 
-.return:hover {
+#home{
+    padding: 10px 20px 10px 20px;
+    font-size: 1.4rem;
+}
+
+.menu-btn:hover {
     filter: none;
     -webkit-filter: none;
     -moz-filter: none;
 }
 
-.return:active {
+.menu-btn:active {
     color: #27282D;
     border: 10px inset;
     border-radius: 50%;
 }
 
-#bear-page .return {
+/* #bear-page .return {
+    background-color: #ffdd00;
+    border-color: #f0d001;
+} */
+
+#bear-page .menu-btn {
     background-color: #ffdd00;
     border-color: #f0d001;
 }
 
-#bear-page .return:hover,
-#bear-page .return:active {
+#bear-page .menu-btn:hover,
+#bear-page .menu-btn:active {
     background-color: #f0d001;
 }
 
-
-#castle-page .return {
-    background-color: #e9f0f2;
-    border-color: #d6ddde;
-}
-
-#castle-page .return:hover,
-#castle-page .return:active {
-    background-color: #d6ddde;
-}
-
-#bonsai-page .return {
+#castle-page .menu-btn {
     background-color: #3e7bd7;
     border-color: #3877d6;
 }
 
-#bonsai-page .return:hover,
-#bonsai-page .return:active {
+#castle-page .menu-btn:hover,
+#castle-page .menu-btn:active {
     background-color: #3877d6;
 }
 
-#world-page .return {
+#bonsai-page .menu-btn {
+    background-color: #e9f0f2;
+    border-color: #d6ddde;
+}
+
+#bonsai-page .menu-btn:hover,
+#bonsai-page .menu-btn:active {
+    background-color: #d6ddde;
+}
+
+#world-page .menu-btn {
     background-color: #47b800;
     border-color: #42aa02;
 }
 
-#world-page .return:hover,
-#world-page .return:active {
+#world-page .menu-btn:hover,
+#world-page .menu-btn:active {
     background-color: #42aa02;
 }
 
@@ -671,7 +682,7 @@ b {
     height: 50vh;
     width: 80vw;
     background: #8A9B8C;
-    border: 40px groove #48B800;
+    border: 40px solid #48B800;
     border-radius: 50px;
     overflow-y: scroll;
 }
@@ -915,22 +926,58 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 }
 
 /* -- narrow desktop window or small mobile device --*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     body.index{
-        /* overflow: hidden; */
+        background: cover;
+        background-position: center;
     }
 
+    #bear-page {
+        background-image: none;
+        background-color:#FFDB00;
+    }
+
+    #castle-page {
+        background-image: none;
+        background-color:#3E7BD7;
+    }
+
+    #bonsai-page {
+        background-image: none;
+        background-color:#E9F0F2;
+    }
+
+    #world-page {
+        background-image: none;
+        background-color:#48B800;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-mb {
+        display: block;
+        position: absolute;
+        top: 0;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        position: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+/* 
     #bear-page,
     #bonsai-page,
     #world-page {
         background-position: center;
         background-size: 150vh;
-    }
+    } */
 
-    #castle-page {
+    /* #castle-page {
         background-position: bottom;
         background-size: 150vh;
-    }
+    } */
 
     #tickets,
     #bear,
@@ -945,25 +992,25 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         grid-row-start: 2;
     }
 
-    #bear-info {
+    #bear-info,
+    #castle-info,
+    #bonsai-info
+     {
         margin: 5%;
         height: 60vh;
         width: 80vw;
+    }
+
+    #bear-info{
         border: 20px solid #48B800;
     }
     
     #castle-info {
-        margin: 5%;
-        height: 60vh;
-        width: 80vw;
         border: 10px inset #3E7BD7;
     }
     
     #bonsai-info {
         max-width: unset;
-        margin: 5%;
-        height: 60vh;
-        width: 80vw;
         border: 10px inset #E9F0F2;
     }
 
