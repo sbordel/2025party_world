@@ -194,7 +194,7 @@ body {
 #bear,
 #castle,
 #bonsai {
-    width: 90%;
+    width: 100%;
 }
 
 #tickets,
@@ -513,7 +513,7 @@ div.info {
     display: flex;
     flex-direction: column;
     align-content: center;
-    /* min-height: 50vh; */
+    min-height: 50vh;
     padding: 15px;
     width: auto;
     text-align: center;
