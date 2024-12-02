@@ -1049,12 +1049,11 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     }
 
     #world-page .info {
-        display: inline-flex;
+        display: flex;
         height: 70vh;
         width: 90vw;
         margin: 5%;
         justify-content: center;
-        float: center;
         text-align: center;
         overflow-x: hidden;
     }
