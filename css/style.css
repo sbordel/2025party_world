@@ -175,6 +175,9 @@ body {
 .elem4,
 .elem5 {
     grid-row-start: 2;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    height: 70%;
 }
 
 .elem6 {
@@ -210,7 +213,7 @@ body {
 a {
     text-decoration: none;
     color: #27282D;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
@@ -242,7 +245,7 @@ a:hover {
 
 .tiles {
     margin-bottom: -80px;
-    width: 12%;
+    width: 15%;
 }
 
 .tiles:hover {
@@ -307,7 +310,6 @@ h2 {
     font-family: 'Superstar';
     font-size: 2.2rem;
     margin-bottom: 5px;
-
 }
 
 h3 {
@@ -362,10 +364,8 @@ section a {
     font-size: 1.2rem;
 }
 
-#link{
+#link {
     font-family: 'Better VCR';
-    /* padding-left: 5%;
-    padding-right: 5%; */
     font-size: 1.2rem;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -373,7 +373,7 @@ section a {
     margin-right: 0;
 }
 
-#link-v2{
+#link-v2 {
     font-family: 'Superstar';
     font-size: 2.4rem;
     padding-bottom: 0;
@@ -502,9 +502,6 @@ a.label:active {
     color: #1e3e6d;
 }
 
-
-/* containers */
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -556,7 +553,7 @@ td {
     width: 10vw;
 }
 
-.tb-right{
+.tb-right {
     text-align: right;
     width: 30vw;
 
@@ -564,7 +561,7 @@ td {
     text-align: right;
 }
 
-.tb-right a{
+.tb-right a {
     text-align: right;
     padding-left: 0;
     padding-right: 0;
@@ -572,7 +569,7 @@ td {
 
 i {
     font-family: 'Ring Matrix';
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
     font-weight: bold;
     vertical-align: bottom;
 }
@@ -581,7 +578,7 @@ b {
     font-family: 'Daydream';
     font-size: 0.8rem;
     vertical-align: bottom;
-   }
+}
 
 .lcd-scroll {
     overflow-y: scroll;
@@ -602,12 +599,13 @@ b {
     display: block;
 }
 
-.menu-btn{
+.menu-btn {
     padding: 10px 15px 10px 15px;
-    margin: 10px 15px 10px 15px;;
+    margin: 10px 15px 10px 15px;
+    ;
 
     font-family: 'Better VCR';
-    color:#27282D;
+    color: #27282D;
     font-size: 1rem;
     border: 10px outset;
     border-radius: 50%;
@@ -615,7 +613,7 @@ b {
     text-decoration: none;
 }
 
-#home{
+#home {
     padding: 10px 20px 10px 20px;
     font-size: 1.4rem;
 }
@@ -817,14 +815,14 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         padding: 2%;
     }
 
-    a.elem1{
-        padding:0;
-        margin:0;
+    a.elem1 {
+        padding: 0;
+        margin: 0;
     }
 
     .elem1 {
         display: flex;
-        top:0;
+        top: 0;
         grid-column: span 2 / span 2;
     }
 
@@ -832,7 +830,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     .elem3 {
         grid-row-start: 2;
     }
-    
+
     .elem4,
     .elem5 {
         grid-row-start: 3;
@@ -856,19 +854,19 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     #castle,
     #bonsai {
         width: 95%;
-        overflow:visible;
+        overflow: visible;
     }
 
-    #tickets{ 
+    #tickets {
         margin-top: -25px;
     }
 
-    #bear{ 
+    #bear {
         margin-top: 125px;
     }
 
     #castle {
-        margin-top:-125px;
+        margin-top: -125px;
     }
 
     #bonsai {
@@ -880,7 +878,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         width: 15%;
     }
 
-    .info{
+    .info {
         height: 80vh;
         padding: 15px;
         margin: 5%;
@@ -892,7 +890,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         margin-bottom: 0.67em;
     }
 
-    .title-mb h1{
+    .title-mb h1 {
         margin: 0;
     }
 
@@ -904,55 +902,63 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         text-align: left;
         width: 10vw;
     }
-    
-    .tb-right{
+
+    .tb-right {
         text-align: right;
         width: 30vw;
-    /* display: flex; */
+        /* display: flex; */
         justify-content: right;
         text-align: right;
-    }  
+    }
 
     i {
-    font-size: 0.8rem;
-    vertical-align: bottom;
-    letter-spacing: -0.1rem;
+        font-size: 0.8rem;
+        vertical-align: bottom;
+        letter-spacing: -0.1rem;
     }
 
     b {
         font-size: 0.7rem;
     }
-    
+
+    .footer p:first-child {
+        float: none;
+    }
+
+    .footer p:last-child {
+        float: none;
+    }
+
 }
 
 /* -- narrow desktop window or small mobile device --*/
 @media screen and (max-width: 600px) {
-    body.index{
+    body.index {
         background: cover;
         background-position: center;
     }
 
     #bear-page {
         background-image: none;
-        background-color:#FFDB00;
+        background-color: #FFDB00;
     }
 
     #castle-page {
         background-image: none;
-        background-color:#3E7BD7;
+        background-color: #3E7BD7;
     }
 
     #bonsai-page {
         background-image: none;
-        background-color:#E9F0F2;
+        background-color: #E9F0F2;
     }
 
     #world-page {
         background-image: none;
-        background-color:#48B800;
+        background-color: #48B800;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
@@ -966,18 +972,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         margin-left: auto;
         margin-right: auto;
     }
-/* 
-    #bear-page,
-    #bonsai-page,
-    #world-page {
-        background-position: center;
-        background-size: 150vh;
-    } */
-
-    /* #castle-page {
-        background-position: bottom;
-        background-size: 150vh;
-    } */
 
     #tickets,
     #bear,
@@ -994,24 +988,34 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
     #bear-info,
     #castle-info,
-    #bonsai-info
-     {
+    #bonsai-info {
         margin: 5%;
         height: 60vh;
         width: 80vw;
     }
 
-    #bear-info{
+    #bear-info {
         border: 20px solid #48B800;
     }
-    
+
     #castle-info {
         border: 10px inset #3E7BD7;
     }
-    
+
     #bonsai-info {
         max-width: unset;
         border: 10px inset #E9F0F2;
+    }
+
+    .tiles {
+
+        width: 20%;
+    }
+
+    h1 {
+        margin-top: default;
+        text-align: center;
+        line-height: 2.2rem;
     }
 
     .table-mb {
@@ -1020,8 +1024,8 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         border-collapse: collapse;
         padding-bottom: 2vh;
     }
-    
-     .table {
+
+    .table {
         display: none;
     }
 
@@ -1032,29 +1036,30 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         letter-spacing: -0.02rem;
     }
 
-    .tb-right{
+    .tb-right {
         text-align: right;
         width: 50vw;
-/*     display: flex; */
         justify-content: right;
         text-align: right;
-    }  
+    }
 
-   .tb-right a {
+    .tb-right a {
         font-size: 1.1rem;
         letter-spacing: -0.02rem;
     }
 
     #world-page .info {
-        display: flex;
+        display: inline-flex;
         height: 70vh;
-        width: 80vw;
+        width: 90vw;
+        margin: 5%;
         justify-content: center;
         float: center;
         text-align: center;
+        overflow-x: hidden;
     }
 
-    #world-info{
+    #world-info {
         justify-content: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1063,25 +1068,24 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     }
 
     #elem7 {
-        align-items: center;
-        text-align: center;
+        align-items: left;
+        text-align: left;
         float: center;
         grid-column: span 2 / span 2;
     }
-    
+
     #elem8 {
-        text-align: center;
         grid-row-start: 2;
         grid-column: span 2 / span 2;
 
     }
-    
+
     #elem9 {
-        text-align: center;
+        text-align: left;
         grid-row-start: 3;
         grid-column: span 2 / span 2;
     }
-    
+
     #elem10 {
         float: center;
         text-align: center;
@@ -1089,12 +1093,50 @@ screen and (max-width: 1100px) and (max-height: 700px) {
         grid-column: span 2 / span 2;
     }
 
+    #world-page h1 {
+        margin-top: 0.8rem;
+        text-align: left;
+        line-height: 2rem;
+    }
+
+    h1#h1-v2 {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        padding-bottom: 0;
+        margin-top: 1.2rem;
+        margin-bottom: 0;
+        text-align: left;
+        letter-spacing: 0.1rem;
+    }
+
+    #symbols {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+    #sym1,
+    #sym2,
+    #sym3,
+    #sym4 {
+        margin-top: 1.2rem;
+        width: 8vw;
+        padding: 2vw;
+    }
+
     .header-box p {
         display: block;
-        padding: 20px;
+        text-align: center;
+        overflow-wrap: break-word;
+        padding: 5%;
         margin-left: auto;
         margin-right: auto;
-        width: 50vw;
+        width: 60vw;
+    }
+
+    .label {
+        font-size: 1rem;
+        padding: 8px 10px 8px 10px;
     }
 
     .footer {
@@ -1104,5 +1146,5 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     .footer-mb {
         display: inline;
     }
-    
+
 }
