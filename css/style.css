@@ -349,7 +349,7 @@ section a {
     font-size: 1.2rem;
 }
 
-#link {
+.link {
     font-family: 'Better VCR';
     font-size: 1.2rem;
     margin-top: 1em;
@@ -358,7 +358,7 @@ section a {
     margin-right: 0;
 }
 
-#link-v2 {
+.link-v2 {
     font-family: 'Superstar';
     font-size: 2.4rem;
     padding-bottom: 0;
@@ -387,8 +387,8 @@ hr {
     width: 100%;
 }
 
-#link:hover,
-#link-v2:hover,
+.link:hover,
+.link-v2:hover,
 .tb-right a:hover {
     filter: none;
     -webkit-filter: none;
@@ -397,7 +397,7 @@ hr {
     color: #8A9B8C;
 }
 
-#link:active,
+.link:active,
 .tb-right a:active {
     background-color: #27282D;
     color: #27282D;
