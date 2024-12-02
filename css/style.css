@@ -149,6 +149,7 @@ body {
 .nav-grid {
     display: flex;
     align-content: baseline;
+    text-align: center;
 
     display: grid;
     height: 80vh;
@@ -158,15 +159,12 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 1vh;
-
-    text-align: center;
 }
 
 .elem1 {
     display: flex;
     align-self: center;
     justify-content: center;
-
     grid-column: span 4 / span 4;
 }
 
@@ -175,8 +173,6 @@ body {
 .elem4,
 .elem5 {
     grid-row-start: 2;
-    /* margin-left: 20px;
-    margin-right: 20px; */
     height: 70%;
 }
 
@@ -223,22 +219,13 @@ a:hover {
     -moz-filter: drop-shadow(-10px -10px 30px #E9F0F2);
 }
 
-#credits:hover {
-    transform: rotate(5deg);
-}
-
-#tickets:hover {
-    transform: rotate(5deg);
-}
-
-#bear:hover {
-    transform: rotate(-5deg);
-}
-
+#credits:hover,
+#tickets:hover,
 #castle:hover {
     transform: rotate(5deg);
 }
 
+#bear:hover,
 #bonsai:hover {
     transform: rotate(-5deg);
 }
@@ -258,8 +245,6 @@ a:hover {
     position: relative;
     bottom: 0;
 }
-
-/* font */
 
 section {
     text-align: center;
@@ -602,7 +587,6 @@ b {
 .menu-btn {
     padding: 10px 15px 10px 15px;
     margin: 10px 15px 10px 15px;
-    ;
 
     font-family: 'Better VCR';
     color: #27282D;
@@ -629,11 +613,6 @@ b {
     border: 10px inset;
     border-radius: 50%;
 }
-
-/* #bear-page .return {
-    background-color: #ffdd00;
-    border-color: #f0d001;
-} */
 
 #bear-page .menu-btn {
     background-color: #ffdd00;
@@ -906,7 +885,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     .tb-right {
         text-align: right;
         width: 30vw;
-        /* display: flex; */
         justify-content: right;
         text-align: right;
     }
@@ -1008,7 +986,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     }
 
     .tiles {
-
         width: 20%;
     }
 
